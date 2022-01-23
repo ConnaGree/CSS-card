@@ -1,0 +1,250 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: 'Odibee Sans', cursive; */
+  font-family: "Red Hat Display", sans-serif;
+  background: hsl(225, 100%, 94%);
+}
+.card-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-size: contain;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 450px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.content-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.card .header-hero {
+  /* padding-bottom: 20px; */
+  width: 100%;
+  height: 220px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url(images/illustration-hero.svg);
+  /* background-position: center; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.order-summery {
+  margin: 6px 0;
+}
+.content-wrap .order-summery h2,
+p {
+  text-align: center;
+  padding: 10px 0;
+}
+.content-wrap .order-summery p {
+  color: hsl(224, 23%, 55%);
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+.content-wrap .order-summery h2 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.package-plan {
+  display: flex;
+  padding: 13px 0;
+  margin: 9px 0;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  background: hsl(225, 100%, 98%);
+  border-radius: 7px;
+}
+.package-plan .inner-package {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.package-plan .inner-package svg {
+  margin-left: -10px;
+}
+.package-plan .inner-package .package-amount h3 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+.package-plan .inner-package .package-amount small {
+  color: hsl(224, 23%, 55%);
+}
+.package-plan .change {
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+  transition: 0.3s;
+}
+.package-plan .change:hover {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.process-transaction {
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.process-transaction .pay {
+  margin: 0 0 5px 0;
+  width: 90%;
+  padding: 12px;
+  background: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: hsl(245, 75%, 52%) 0px 4px 12px;
+  transition: 0.3s;
+}
+.process-transaction .pay:hover {
+  background: hsl(224, 23%, 55%);
+  box-shadow: hsl(224, 23%, 55%) 0px 4px 12px;
+}
+.process-transaction .cancel {
+  margin-top: 25px;
+  background: none;
+  font-weight: 700;
+  font-family: inherit;
+  border: none;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.9rem;
+}
+.process-transaction .cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 438px) {
+  .card {
+    width: 325px;
+    background: #fff;
+    border-radius: 15px;
+  }
+  .header-hero {
+    width: 100%;
+  }
+  .card .header-hero svg {
+    /* padding-bottom: 20px; */
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .card .header-hero {
+    /* padding-bottom: 20px; */
+    width: 100%;
+    height: 165px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-image: url(images/illustration-hero.svg);
+    /* background-position: center; */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .card-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/pattern-background-mobile.svg");
+    background-size: contain;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-wrap .order-summery p {
+    color: hsl(224, 23%, 55%);
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+  .content-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .content-wrap .order-summery h2 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+  }
+  .package-plan {
+    display: flex;
+    padding: 10px 5px;
+    margin: 9px 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: hsl(225, 100%, 98%);
+    border-radius: 7px;
+  }
+  .package-plan .inner-package svg {
+    /* margin-left: -10px; */
+    font-size: 0.9rem;
+  }
+  .package-plan .inner-package .package-amount h3 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 0.8rem;
+  }
+  .package-plan .inner-package .package-amount small {
+    color: hsl(224, 23%, 55%);
+  }
+  .package-plan .change {
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+    transition: 0.3s;
+    font-size: 0.8rem;
+  }
+  .process-transaction .pay {
+    margin: 0 0 5px 0;
+    width: 100%;
+    padding: 12px;
+    background: hsl(245, 75%, 52%);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: hsl(245, 75%, 52%) 0px 4px 12px;
+    transition: 0.3s;
+  }
+}
